@@ -2,7 +2,7 @@ const toBool = (x) => x == 'true'
 const { existsSync } = require('fs')
 if (existsSync('config.env')) require('dotenv').config({ path: './config.env' })
 module.exports = {
-    SESSION_ID: process.env.SESSION_ID || '', //your ssid to run bot
+    SESSION_ID: process.env.SESSION_ID || '', inrl~681ed4JDR98427397ce712a587b219d34fdb
     MONGO_URL : process.env.MONGO_URL,//must be enter your mongo url;
     HEROKU: {
         API_KEY: process.env.HEROKU_API_KEY,
@@ -17,7 +17,7 @@ module.exports = {
     GIT : "https://github.com/inrl-official/inrl-bot-md",
     WAGRP : 'https://chat.whatsapp.com/ECjTvQMK5D6Bayzu6rJ7Ot',
     ALLWAYS_ONLINE: toBool(process.env.ALLWAYS_ONLINE || "true"),
-    REACT : toBool(process.env.REACT || "false"),
+    REACT : toBool(process.env.REACT || "true"),
     AUTO_BIO : toBool(process.env.AUTO_BIO || "false"),
     PM_BLOCK : toBool(process.env.PM_BLOCK || "false"),
     BGMBOT : toBool(process.env.BGMBOT || "false"),
